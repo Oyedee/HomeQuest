@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RealEstate">
-        <activity android:name=".ThirdPageActivity"></activity>
+        <activity android:name=".FourthPageActivity"></activity>
+        <activity android:name=".ThirdPageActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".FirstDisplay">
             <intent-filter>
