@@ -8,11 +8,12 @@
     tools:context=".FourthPageActivity">
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="380dp"
-        android:padding="5dp"
         android:background="@drawable/background_image"
         android:fitsSystemWindows="true"
+        android:padding="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -73,10 +74,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="56dp"
-                android:text="Properties in Ago Palace\nLagos"
                 android:fontFamily="@font/poppins_bold"
-                android:textSize="22dp"
+                android:text="Properties in Ago Palace\nLagos"
                 android:textColor="@color/white"
+                android:textSize="26sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.081"
                 app:layout_constraintStart_toStartOf="parent"
@@ -86,6 +87,18 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_cards"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        tools:listitem="@layout/item_card_list">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
