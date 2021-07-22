@@ -21,15 +21,11 @@ public class FourthPageActivity extends AppCompatActivity {
 
 
         RecyclerView recyclerNotes = findViewById(R.id.list_cards);
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(FourthPageActivity.this, 1);
-        gridLayoutManager.setOrientation(GridLayoutManager.HORIZONTAL);
-
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(FourthPageActivity.this,1,LinearLayoutManager.HORIZONTAL,false);
         recyclerNotes.setLayoutManager(gridLayoutManager);
 
         RecyclerView recyclerView = findViewById(R.id.list_images);
-        // set a GridLayoutManager with 3 number of columns
-        GridLayoutManager gridLayoutManager2 = new GridLayoutManager(FourthPageActivity.this,1);
-        gridLayoutManager2.setOrientation(LinearLayoutManager.HORIZONTAL); // set Horizontal Orientation
+        GridLayoutManager gridLayoutManager2 = new GridLayoutManager(FourthPageActivity.this,1,LinearLayoutManager.HORIZONTAL,false);
         recyclerView.setLayoutManager(gridLayoutManager2); // set LayoutManager to RecyclerView
     }
 }
