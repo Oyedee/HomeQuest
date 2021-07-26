@@ -24,6 +24,6 @@ public class LoginActivity extends AppCompatActivity {
                 Intent intent = new Intent(LoginActivity.this, ThirdPageActivity.class);
                 startActivity(intent);
             }
-        }, 5000);
+        }, 1000);
     }
 }

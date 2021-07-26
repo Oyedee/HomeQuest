@@ -23,7 +23,7 @@ public class ThirdPageActivity extends AppCompatActivity {
                 Intent intent = new Intent(ThirdPageActivity.this, FourthPageActivity.class);
                 startActivity(intent);
             }
-        }, 5000);
+        }, 1000);
 //        ThirdPageActivity.super.onBackPressed();
     }
 }
